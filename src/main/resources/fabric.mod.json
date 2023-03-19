@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "org.cocahonka.nether_slabber_mod.NetherSlabberMod"
+    ],
+    "client": [
+      "org.cocahonka.nether_slabber_mod.NetherSlabberModClient"
     ]
   },
   "mixins": [
