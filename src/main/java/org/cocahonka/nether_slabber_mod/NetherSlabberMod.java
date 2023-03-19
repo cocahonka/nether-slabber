@@ -1,6 +1,7 @@
 package org.cocahonka.nether_slabber_mod;
 
 import net.fabricmc.api.ModInitializer;
+import org.cocahonka.nether_slabber_mod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,6 +11,6 @@ public class NetherSlabberMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItems.register();
 	}
 }
