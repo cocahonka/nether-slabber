@@ -6,11 +6,12 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.cocahonka.nether_slabber_mod.NetherSlabberMod;
+import org.cocahonka.nether_slabber_mod.item.custom.HelloKittySelectorItem;
 
 public class ModItems {
 
     public static final Item HELLO_KITTY_SELECTOR = registerItem("hello_kitty_selector",
-            new Item(new FabricItemSettings().group(ItemGroup.TOOLS)));
+            new HelloKittySelectorItem(new FabricItemSettings().group(ItemGroup.TOOLS).maxCount(1)));
 
     private static Item registerItem(String id, Item item){
         return Registry.register(Registry.ITEM, new Identifier(NetherSlabberMod.MOD_ID, id), item);
