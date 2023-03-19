@@ -4,6 +4,7 @@
   "package": "org.cocahonka.nether_slabber_mod.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ModEntityDataSaver"
   ],
   "client": [
     "NetherSlabberMixin"
